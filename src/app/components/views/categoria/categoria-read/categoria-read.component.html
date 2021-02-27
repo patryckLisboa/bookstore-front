@@ -2,7 +2,7 @@
      <div class="title">
          <h1>Categorias</h1>
      </div>
-     <button class="mat-elevation-z8" mat-stroked-button color="primary"> NOVA CATEGORIA </button>
+     <button class="mat-elevation-z8" (click)="navegarParaCategoriaCreate()" mat-stroked-button color="primary"> NOVA CATEGORIA </button>
 
      <div class="mat-elevation-z8 content-table">
         <table class="table" mat-table [dataSource] = "categorias">
@@ -46,7 +46,7 @@
     
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-        </table>
+        </table> 
     </div>
       
 </div>
